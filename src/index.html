@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="OnWheels project" />
+    <meta name="author" content="open summer of code" />
+    <link rel="icon" href="./img/icons/favicon.ico" />
+
+    <title>OnWheels project</title>
+
+    <!-- flexbox -->
+    <link href="./css/flexboxgrid.css" rel="stylesheet" />
+
+    <!-- Custom styles -->
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/typography.css" rel="stylesheet" />
+    <link href="./css/buttons.css" rel="stylesheet" />
+
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/project.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+
+    <!-- FontAwesome -->
+    <link
+      href="./../node_modules/@fortawesome/fontawesome-free/css/all.css"
+      rel="stylesheet"
+    />
+
+    <!-- VideoJS -->
+    <link
+      href="./../node_modules/video.js/dist/video-js.min.css"
+      rel="stylesheet"
+    />
+    <script src="./../node_modules/video.js/dist/video.min.js"></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400"
+      rel="stylesheet"
+    />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <meta
+      name="keywords"
+      content="osoc22, open, summer, code, Belgium, openstreetmap, onwheels, wheelchair, MapComplete, OSM, BOSA,"
+    />
+    <meta name="author" content="The Free Wheelies, Open Knowledge Belgium" />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:title" content="OnWheels Project" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://osoc22.github.io/project-on-wheels"
+    />
+    <meta
+      property="og:image"
+      content="http://osoc.miet.be/img/socialmedia/socialmedia.png?4362984378"
+    />
+    <meta
+      property="og:description"
+      content="Removing obstacles with open data"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@osocode" />
+    <meta name="twitter:title" content="OnWheels Project" />
+    <meta
+      name="twitter:description"
+      content="Removing obstacles with open data"
+    />
+    <meta
+      name="twitter:url"
+      content="http://osoc22.github.io/project-on-wheels"
+    />
+
+    <!-- FAVICONS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/icons/safari-pinned-tab.svg"
+      color="#22ca60"
+    />
+    <meta name="msapplication-TileColor" content="#22ca60" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-title" content="OnWheels Project" />
+    <meta name="application-name" content="OnWheels Project" />
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="hero">
+        <div class="container container-fluid">
+          <div class="row around-xs">
+            <div class="col-xs-12 col-sm-11 col-md-10 col-lg-9">
+              <div class="row hero-card">
+                <div class="col-xs-12 col-sm-10 col-md-7 col-lg-8">
+                  <h1 class="h1 hero-title">OnWheels Project</h1>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7">
+                  <p class="hero-intro">Removing obstacles with open data</p>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-md-7 col-lg-8">
+                  <div class="button-group">
+                    <a
+                      class="button button--narrow"
+                      href="https://mapcomplete.osm.be/onwheels"
+                      target="_blank"
+                      >View project</a
+                    >
+                    <a
+                      class="button button--narrow button--alt"
+                      href="https://github.com/osoc22/project-on-wheels"
+                      target="_blank"
+                      >Contribute</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container -->
+      </div>
+      <!-- hero -->
+
+      <div class="container container-fluid project-section">
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 col-lg-6"
+          >
+            <div class="project-image">
+              <!-- <video
+                id="my-player"
+                class="video-js"
+                controls
+                preload="auto"
+                poster="./img/play.png"
+                data-setup="{}"
+              >
+                <source src="./vid/pitch-osoc-v1.mp4" type="video/mp4" />
+                <source src="./vid/pitch-osoc-v1.webm" type="video/webm" />
+                <track
+                  kind="captions"
+                  src="./vid/pitch-osoc-v1.en.vtt"
+                  srclang="en"
+                  label="English"
+                />
+                <track
+                  kind="captions"
+                  src="./vid/pitch-osoc-v1.nl.vtt"
+                  srclang="nl"
+                  label="Nederlands"
+                  default
+                />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                  <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                  >
+                    supports HTML5 video
+                  </a>
+                </p>
+              </video> -->
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-lg-5 col-md-offset-1"
+          >
+            <h2 class="h4">The project</h2>
+            <p>
+              We made a mapping tool, based on
+              <a href="https://osm.org" target="_blank">OpenStreetMap</a> and
+              <a href="https://mapcomplete.osm.be/">MapComplete</a>. Using our
+              tool, anyone can very easily add, view, and edit data about
+              wheelchair accessibility. The map shows POIs and their details.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5"
+          >
+            <p>
+              A user can answer questions about the accessibility and the other
+              details of a POI.
+            </p>
+            <p>
+              Because of the simplicity of the questions, basically anyone with
+              a computer or smartphone, can now add information and help remove
+              obstacles using open data.
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-lg-6 col-md-offset-1"
+          >
+            <div class="project-image">
+              <img src="./img/details.png" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0 col-lg-6"
+          >
+            <div class="project-image">
+              <img src="./img/screenshot.png" />
+            </div>
+          </div>
+          <div
+            class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-lg-5 col-md-offset-1"
+          >
+            <p>
+              The data for the different categories is styled using different
+              icons and colors. Some categories like kerbs and parkings are also
+              styled differently based on their attributes. Want to know more?
+              Have a look at the project to experience it for yourself.
+            </p>
+            <div class="button-group">
+              <a
+                class="button button--narrow"
+                href="https://mapcomplete.osm.be/cycle_infra.html?z=19&lat=51.05717&lon=3.739297#"
+                target="_blank"
+                >View project</a
+              >
+              <a
+                class="button button--narrow button--alt"
+                href="https://github.com/osoc21/BikeInfrastructure"
+                target="_blank"
+                >Contribute</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row center-xs">
+        <div class="col-xs-10">
+          <h2 class="h4">Demo</h2>
+        </div>
+        <div class="col-xs-10 project-image">
+          <iframe
+            allow="geolocation"
+            src="https://mapcomplete.osm.be/onwheels?fs-welcome-message=false&fs-userbadge=false&fs-layers=false"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="container container-fluid project-section">
+        <hr />
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5">
+            <h3 class="h5">The team</h3>
+            <ul class="team">
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://rlin.eu/" target="_blank"
+                    ><img class="round" src="./img/robin-van-der-linde.jpg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://rlin.eu/" target="_blank"
+                      >Robin van der Linde</a
+                    >
+                  </h4>
+                  <p>Developer</p>
+                  <div class="social">
+                    <a href="https://twitter.com/linde_robin" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/RLinEU/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i></a
+                    ><a href="https://github.com/RobinLinde" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://osm.org/user/Robin%20van%20der%20Linde"
+                      target="_blank"
+                    >
+                      <i class="fas fa-map"></i
+                    ></a>
+                    <a href="https://rlin.eu/" target="_blank">
+                      <i class="fas fa-globe"></i
+                    ></a>
+                  </div>
+                </div>
+              </li>
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://github.com/roconmachine" target="_blank"
+                    ><img class="round" src="./img/muhammad-rezaul-hasan.jpg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://github.com/roconmachine" target="_blank"
+                      >Muhammad Rezaul Hasan</a
+                    >
+                  </h4>
+                  <p>Developer</p>
+                  <div class="social">
+                    <a href="https://twitter.com/roconmachine" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/rezaul-hasan/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i></a
+                    ><a href="https://github.com/roconmachine" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </li>
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://github.com/AlexanderRebai" target="_blank"
+                    ><img class="round" src="./img/alexander-rebai.jpg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://github.com/AlexanderRebai" target="_blank"
+                      >Alexander Rebai</a
+                    >
+                  </h4>
+                  <p>Developer</p>
+                  <div class="social">
+                    <a href="https://github.com/AlexanderRebai" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </li>
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://github.com/HispanicMojitos" target="_blank"
+                    ><img class="round" src="./img/andrews-leruth.jpg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://github.com/HispanicMojitos" target="_blank"
+                      >Andrews Leruth</a
+                    >
+                  </h4>
+                  <p>Developer</p>
+                  <div class="social">
+                    <a href="https://github.com/HispanicMojitos" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-5 col-lg-5 col-lg-offset-2"
+          >
+            <h3 class="h5">The coaches</h3>
+            <ul class="team">
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a
+                    href="https://www.linkedin.com/in/labautpol/"
+                    target="_blank"
+                    ><img class="round" src="./img/robin-julien.jpg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a
+                      href="https://www.linkedin.com/in/labautpol/"
+                      target="_blank"
+                      >Robin Julien</a
+                    >
+                  </h4>
+                  <p>Coach</p>
+                  <div class="social">
+                    <a
+                      href="https://www.linkedin.com/in/robin-julien-9b03531a4/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/ctsteward"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+              </li>
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://github.com/pietervdvn" target="_blank"
+                    ><img class="round" src="./img/pieter-vandervennet.jpg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://github.com/pietervdvn" target="_blank"
+                      >Pieter Vander Vennet</a
+                    >
+                  </h4>
+                  <p>Councillor</p>
+                  <div class="social">
+                    <a href="https://twitter.com/pietervdvn" target="_blank"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="https://github.com/pietervdvn" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://osm.org/user/Pieter%20Vander%20Vennet"
+                      target="_blank"
+                    >
+                      <i class="fas fa-map"></i
+                    ></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <h3 class="h5">Our partners</h3>
+            <ul class="partners">
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://onwheelsapp.com/" target="_blank"
+                    ><img src="./img/logo-onwheels.svg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://onwheelsapp.com" target="_blank"
+                      >OnWheels</a
+                    >
+                  </h4>
+                </div>
+              </li>
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://osm.be/" target="_blank"
+                    ><img src="./img/osmbe-logo.svg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://osm.be/" target="_blank"
+                      >OpenStreetMap Belgium</a
+                    >
+                  </h4>
+                </div>
+              </li>
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://bosa.be/" target="_blank"
+                    ><img src="./img/logo-bosa.svg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://bosa.be/" target="_blank"
+                      >BOSA Digital Transformation Office</a
+                    >
+                  </h4>
+                </div>
+              </li>
+              <li class="row middle-xs">
+                <div class="col-xs-3">
+                  <a href="https://www.iodigital.com/" target="_blank"
+                    ><img src="./img/logo-iO.svg"
+                  /></a>
+                </div>
+                <div class="col-xs-9 col-md-8 col-lg-8 col-md-offset-1">
+                  <h4 class="h6">
+                    <a href="https://www.iodigital.com/" target="_blank"
+                      >iO Digital</a
+                    >
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container container-fluid">
+          <div class="row middle-xs">
+            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+              <a href="https://bit.ly/3x1Hnze"
+                ><img src="img/osoc-logo.svg"
+              /></a>
+            </div>
+            <div class="col-xs-6 col-sm-8 col-md-9 col-lg-10">
+              <p>
+                Made with love at
+                <a href="https://osoc.be/editions/2022" target="_blank"
+                  >osoc&nbsp;2022</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
