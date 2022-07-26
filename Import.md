@@ -26,14 +26,17 @@ The most important thing is that the following properties are present in the Geo
 To manage the items we're using MapRoulette.
 
 1. First login to [MapRoulette](https://maproulette.org/).
-2. Go to the [Create & Manage](https://maproulette.org/admin/projects) page.
+
 ![Create & Manage](img/create-manage.png)
+
+2. Go to the [Create & Manage](https://maproulette.org/admin/projects) page.
 3. Select a project, or create a new one.
 4. Once you've selected a project, you can add a new challenge.
 5. Fill in all fields, most are well documented on the page itself, for the 'Location of your task data' select 'I want to upload a GeoJSON file'.
 6. Upload the GeoJSON file we created earlier.
 7. Once you're at the challenge page we can find the ID of the challenge, we'll need it later. It's located in the URL.
-![URL](img/url.png)
+
+![URL](img/URL.png)
 
 ## Adding a challenge layer to MapComplete
 
