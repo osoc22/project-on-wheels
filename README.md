@@ -27,3 +27,7 @@ Look at:
 ## Data documentation
 
 If you want to have a look at all the tags being used, take a look at the actual [theme](https://github.com/pietervdvn/MapComplete/tree/develop/assets/themes/onwheels).
+
+## Import process
+
+For this project we designed a process using MapRoulette and MapComplete. Details can be found in the [Import.md](Import.md) file.
