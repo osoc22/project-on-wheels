@@ -1,7 +1,7 @@
 # Project OnWheels
 
 This repo contains the website and some documentaion for the OnWheels project.
-If you want to find out more about the project, take a look at the [GitHub pages](https://osoc22.github.io/project-on-wheels) website.
+If you want to find out more about the project, take a look at the [GitHub pages](https://osoc22.github.io/project-on-wheels) website and the [Medium article](https://medium.com/@camillafrison9/a-map-to-make-the-city-accessible-ddf174243f2c)
 
 **NOTE:** The actual source code of this project can be found in the [MapComplete repo](https://github.com/pietervdvn/MapComplete).
 
