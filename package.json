@@ -6,7 +6,7 @@
     "build:gh-pages": "parcel build ./src/index.html --public-url ./"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.6.2",
+    "@parcel/packager-raw-url": "2.7.0",
     "@parcel/transformer-webmanifest": "2.6.2",
     "parcel": "2.6.2"
   },
