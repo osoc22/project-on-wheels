@@ -1,5 +1,8 @@
 {
-    "recommendations": [
-        "esbenp.prettier-vscode"
-    ]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "seatonjiang.gitmoji-vscode",
+    "redhat.vscode-yaml",
+    "davidanson.vscode-markdownlint"
+  ]
 }

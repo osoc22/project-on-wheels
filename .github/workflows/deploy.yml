@@ -13,12 +13,12 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 15.x
+          node-version: 18.x
           check-latest: true
 
       - name: Install NPM package
@@ -28,7 +28,7 @@ jobs:
         run: npm run build:gh-pages
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: "dist" # The folder the action should deploy.
