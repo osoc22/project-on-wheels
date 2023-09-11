@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code from GitHub repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Lint Markdown files using markdownlint-cli2
         uses: DavidAnson/markdownlint-cli2-action@v12
