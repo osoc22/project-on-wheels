@@ -6,12 +6,12 @@
     "build:gh-pages": "parcel build ./src/index.html --public-url ./"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.10.2",
-    "@parcel/transformer-webmanifest": "2.10.2",
-    "parcel": "2.10.2"
+    "@parcel/packager-raw-url": "2.10.3",
+    "@parcel/transformer-webmanifest": "2.10.3",
+    "parcel": "2.10.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "6.4.2",
+    "@fortawesome/fontawesome-free": "6.5.1",
     "video.js": "8.6.1"
   }
 }
