@@ -26,7 +26,7 @@ Look at:
 
 ## Data documentation
 
-If you want to have a look at all the tags being used, take a look at the actual [theme](https://github.com/pietervdvn/MapComplete/tree/develop/assets/themes/onwheels).
+If you want to have a look at all the tags being used, take a look at the [taginfo entry](https://taginfo.openstreetmap.org/projects/mapcomplete_onwheels#tags) or the actual [theme](https://github.com/pietervdvn/MapComplete/tree/develop/assets/themes/onwheels).
 
 ## Import process
 
